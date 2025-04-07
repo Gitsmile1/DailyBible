@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 随机背景图片功能
+    const backgroundImages = [
+        './bg1.jpg',
+        './bg2.jpg',
+        './bg3.jpg',
+        './bg4.jpg',
+        './bg5.jpg',
+        './bg6.jpg'
+    ];
+    const randomBgIndex = Math.floor(Math.random() * backgroundImages.length);
+    document.body.style.backgroundImage = `url('${backgroundImages[randomBgIndex]}')`;
     // 获取音乐和按钮元素
     const bgMusic = document.getElementById('bg-music');
     const musicToggle = document.getElementById('music-toggle');
