@@ -1,16 +1,17 @@
 @media (max-width: 480px) {
     .container {
-        padding: 15px;
+        padding: 12px;
         width: 95%;
     }
     
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     #output {
         font-size: 16px;
     }
+    
 }
 body {
     font-family: Arial, sans-serif;
@@ -20,13 +21,26 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
-    /* 新增背景图片代码 */
-    /* background: url('./image/圣经背景.png') no-repeat center center fixed; */
-    background: url('./Biblebg.png') no-repeat center center fixed;
-    /* background-size: cover; 确保图片覆盖整个屏幕 */
-    /* position: relative; 为叠加效果做准备 */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /* 移除固定的背景图片 */
 }
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    新增背景图片代码
+    background: url('./image/圣经背景.png') no-repeat center center fixed;
+    background: url('./bg44.jpg') no-repeat center center fixed;
+    background-size: cover; /* 确保图片覆盖整个屏幕 */
+    /* position: relative; 为叠加效果做准备
+}  */
 
 /* 添加半透明遮罩层提升文字可读性 */
 body::before {
@@ -54,8 +68,9 @@ body::before {
 #output {
     margin-top: 15px;
     font-size: 22px;
-    color: #252525;
-    line-height: 1.6;
+    color: #212020;
+    line-height: 1.4;
+    font-weight: 600;
 }
 
 blockquote {
