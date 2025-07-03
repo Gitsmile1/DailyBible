@@ -35,10 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         
         const formattedDate = `
-            ${date.getDate().toString().padStart(2, '0')}/
             ${(date.getMonth() + 1).toString().padStart(2, '0')}/
             ${date.getFullYear()}
-            ${weekdays[date.getDay()]}
         `.replace(/\s+/g, ' '); // 去除多余空格
 
         document.getElementById('date-display').textContent = formattedDate;
